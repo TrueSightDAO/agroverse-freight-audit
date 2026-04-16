@@ -13,6 +13,6 @@
       "source_location": "/Users/garyjob/Downloads/375_kg_Shipping_Manifest_Matheus_Reis_2026-04-06.pdf"
     }
   ],
-  "pricing_snapshot_reference": "snapshots/2025-11-04T12-54_omega-services_not-san-francisco-in-quote_freight-pricing.json",
+  "pricing_snapshot_reference": "snapshots/20251104_1254_omega-services_not-san-francisco-in-quote_freight-pricing.json",
   "notes": "Raw PDFs can be copied into this repository under manifests/pdf/ if desired."
 }

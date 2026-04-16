@@ -1,10 +1,10 @@
 {
-  "snapshot_id": "omega-services-2025-11-04T12-54-not-san-francisco-in-quote",
+  "snapshot_id": "omega-services-20251104-1254-not-san-francisco-in-quote",
   "effective_timestamp_local": "2025-11-04T12:54:00",
   "timezone": "unknown",
   "timestamp_source_text": "Tue, Nov 4, 2025 at 12:54 PM",
   "source_vendor": "Omega / Mega Services (5CL)",
-  "source_quote_file": "quotations/2025-11-04T12-54_omega-services_not-san-francisco-in-quote_quote.pdf",
+  "source_quote_file": "quotations/20251104_1254_omega-services_not-san-francisco-in-quote_quote.pdf",
   "source_quote_original_filename": "Quotation Mega services.pdf",
   "geographic_scope": {
     "san_francisco_named_in_vendor_quote_pdf": false,
@@ -12,7 +12,7 @@
     "vendor_quote_us_charges_context": "Described as local charges in the US; no US city named.",
     "vendor_quote_origin_context": "Brazil team; delivery to SSA airport mentioned (Brazil).",
     "vendor_quote_delivery_note": "Door delivery available upon request; vendor asks to reconfirm address.",
-    "audit_filename_note": "Filename includes not-san-francisco-in-quote because the PDF does not state San Francisco."
+    "audit_filename_note": "Repository filenames use YYYYMMDD[_HHMM]_… from the quote; this file includes not-san-francisco-in-quote because the PDF does not state San Francisco."
   },
   "code_reference": {
     "repository": "tokenomics",
