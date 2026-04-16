@@ -27,3 +27,9 @@ If timezone is unknown in source material, keep timezone unknown in related JSON
 The email timestamp inside the PDF is `Wed, Apr 15, 2026 at 7:48 AM`, so the repository
 filename uses `20260415_0748…` even if the operator saved the export locally as
 `20260414 Quotation Mega services.pdf`.
+
+## Example (Ilheus to Austin / 3rd Eye Cafe)
+
+`20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_quote.pdf`
+
+Email timestamp inside the PDF: `Tue, Mar 24, 2026 at 10:35 AM` → `20260324_1035…`.
