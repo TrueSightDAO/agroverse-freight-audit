@@ -6,6 +6,12 @@
   "source_vendor": "Omega / Mega Services (5CL)",
   "source_quote_file": "quotations/20251104_1254_omega-services_not-san-francisco-in-quote_quote.pdf",
   "source_quote_original_filename": "Quotation Mega services.pdf",
+  "operator_shipment_context": {
+    "description": "Operator-recorded lane for this quotation period: Matheus (Ilheus area, Bahia, Brazil) to Kirsten (San Francisco, CA, USA).",
+    "origin_contact": "Matheus",
+    "destination_contact": "Kirsten (San Francisco, CA)",
+    "vendor_pdf_route_line_explicit": false
+  },
   "geographic_scope": {
     "san_francisco_named_in_vendor_quote_pdf": false,
     "us_destination_city_named_in_vendor_quote_pdf": false,
@@ -84,7 +90,7 @@
   "notes": [
     "Timestamp taken from quote email text in source PDF export.",
     "Timezone is not explicit in the extracted quote text.",
-    "Vendor PDF text does not name San Francisco; internal tooling may still assume SF for unrelated flows.",
+    "Vendor PDF text does not name San Francisco, but operator context for this lane is Matheus (Ilheus, Brazil) to Kirsten (San Francisco, CA). See also snapshots/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_freight-pricing.json where the vendor route line is explicit.",
     "This snapshot is intended as immutable historical baseline."
   ]
 }

@@ -29,6 +29,8 @@ Examples:
 
 - `quotations/20251104_1254_omega-services_not-san-francisco-in-quote_quote.pdf`
 - `snapshots/20251104_1254_omega-services_not-san-francisco-in-quote_freight-pricing.json`
+- `quotations/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_quote.pdf`
+- `snapshots/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_freight-pricing.json`
 - `manifests/20260406_matheus-reis_manifests.json`
 
 When the vendor document does not name a US city (for example San Francisco), include that
@@ -37,7 +39,22 @@ fact in the filename slug and in JSON `geographic_scope` so audits stay honest.
 If timezone is unknown from source, include `timezone: "unknown"` in JSON metadata and
 store the original timestamp text exactly as written in the quote.
 
+If the vendor PDF is silent on the city pair but the operator knows the intended lane,
+record that under JSON `operator_shipment_context` (and keep `geographic_scope` faithful
+to what the vendor PDF actually prints).
+
 ## First Baseline Added
 
 The initial baseline is based on Omega / Mega Services quote content and the freight
 model originally introduced in `tokenomics` commit `a1a61a86`.
+
+## Latest vendor quotation (explicit route)
+
+`quotations/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_quote.pdf`
+names **Ilheus, BA, Brazil** to **San Francisco, CA 94117** in the vendor email text, and
+is archived alongside
+`snapshots/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_freight-pricing.json`.
+
+Note: the operator download filename may use `YYYYMMDD` (for example `20260414 …`) while
+the email timestamp inside the PDF is `2026-04-15 07:48`; repository filenames follow the
+**email timestamp** when present, per the timestamp policy above.
