@@ -1,0 +1,139 @@
+{
+  "snapshot_id": "ilheus-ssa-to-sfo-air-freight-2025-11-04-001",
+  "effective_timestamp_local": "2025-11-04T12:54:00",
+  "timezone": "America/Sao_Paulo",
+  "timestamp_source_text": "Email date from Graziela Vedana on 2025-11-04",
+  "source_vendor": "5CL",
+  "source_quote_file": "freight_quotes/2025/11/ilheus-ssa-to-sfo-air-freight-2025-11-04.pdf",
+  "source_quote_original_filename": "unknown",
+  "operator_shipment_context": "Air freight shipment for cacao products",
+  "geographic_scope": "Ilheus (SSA, Brazil) to San Francisco (SFO, USA)",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 200,
+      "max_weight_kg": 299,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 300,
+      "max_weight_kg": 499,
+      "rate_usd_per_kg": 3.4
+    },
+    {
+      "min_weight_kg": 500,
+      "max_weight_kg": 749,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 750,
+      "max_weight_kg": 999,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 1000,
+      "max_weight_kg": 9999,
+      "rate_usd_per_kg": 3.2
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": [
+    {
+      "name": "Inland Transport (Brazil)",
+      "type": "fixed_plus_percentage",
+      "value_usd": 695,
+      "percentage_of_cargo_value": 0.0015,
+      "notes": "Dedicated truck service"
+    },
+    {
+      "name": "Airport Charges (Brazil)",
+      "type": "per_kg_with_minimum",
+      "rate_usd_per_kg": 0.3,
+      "minimum_usd": 250
+    },
+    {
+      "name": "Export Documentation",
+      "type": "fixed",
+      "value_usd": 95,
+      "per": "shipment"
+    },
+    {
+      "name": "Export Customs Clearance",
+      "type": "at_cost",
+      "notes": "For the account of the shipper"
+    },
+    {
+      "name": "Airline Terminal Fee (US)",
+      "type": "range",
+      "min_usd": 200,
+      "max_usd": 225,
+      "notes": "Depends on airline"
+    },
+    {
+      "name": "Import Handling Fee (US)",
+      "type": "fixed",
+      "value_usd": 125,
+      "per": "shipment"
+    },
+    {
+      "name": "Delivery to Door (US)",
+      "type": "on_request",
+      "notes": "Available upon request, reconfirm address"
+    },
+    {
+      "name": "US Customs Clearance",
+      "type": "fixed",
+      "value_usd": 150
+    },
+    {
+      "name": "Invoice Line Items (US)",
+      "type": "tiered",
+      "details": "First 3 line-items free, $5.00 per line thereafter"
+    },
+    {
+      "name": "FDA Processing (if applicable)",
+      "type": "fixed",
+      "value_usd": 100
+    },
+    {
+      "name": "Bond (if applicable)",
+      "type": "variable",
+      "details": "$6.00 per $1,000 of value plus duty, $100.00 minimum"
+    },
+    {
+      "name": "Duties MPF",
+      "type": "at_cost",
+      "details": "0.3464%, $33.58 minimum, $651.50 maximum"
+    },
+    {
+      "name": "US Customs Inspection and Exams",
+      "type": "at_cost_plus_handling",
+      "handling_fee_usd": 125,
+      "notes": "At discretion of US Customs, non-negotiable"
+    }
+  ],
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "dimension_unit": "cm",
+    "max_pallet_dimensions": {
+      "length_cm": 300,
+      "width_cm": 200,
+      "height_cm": 160
+    },
+    "max_pallet_weight_kg": 4000
+  },
+  "notes": [
+    "Pricing for air freight is valid for 15 days only.",
+    "Reconfirm prices at the end of February for March shipments.",
+    "Ocean freight deemed significantly expensive due to infrastructure and distance to closest port.",
+    "Shipper may save costs by delivering directly to SSA airport with own contacts.",
+    "All shipments entering US commerce are subject to US Customs inspection and exams.",
+    "Surety Bond required for all customs entries; rates vary for cargo requiring clearance through other governmental agencies."
+  ]
+}
