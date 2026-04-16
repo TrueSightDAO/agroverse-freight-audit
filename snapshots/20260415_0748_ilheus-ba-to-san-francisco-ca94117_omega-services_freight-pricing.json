@@ -1,0 +1,105 @@
+{
+  "snapshot_id": "omega-services-20260415-0748-ilheus-ba-to-san-francisco-ca94117",
+  "effective_timestamp_local": "2026-04-15T07:48:00",
+  "timezone": "unknown",
+  "timestamp_source_text": "Wed, Apr 15, 2026 at 7:48 AM",
+  "source_vendor": "Omega / Mega Services (5CL)",
+  "source_quote_file": "quotations/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_quote.pdf",
+  "source_quote_original_filename": "20260414 Quotation Mega services.pdf",
+  "source_operator_download_note": "Operator saved the PDF export locally as \"20260414 Quotation Mega services.pdf\"; the email timestamp inside the PDF is Wed, Apr 15, 2026 at 7:48 AM, so the repository filename uses 20260415_0748.",
+  "operator_shipment_context": {
+    "origin_contact": "Matheus",
+    "origin_location_text": "Ilheus area, Bahia (BA), Brazil",
+    "destination_contact": "Kirsten",
+    "destination_location_text": "San Francisco, CA, USA"
+  },
+  "geographic_scope": {
+    "vendor_pdf_route_line_explicit": true,
+    "vendor_route_line_text": "EX Ilheus - BA, 45653-310, Brazil to San Francisco, CA 94117",
+    "san_francisco_named_in_vendor_quote_pdf": true,
+    "us_destination_city_named_in_vendor_quote_pdf": true
+  },
+  "code_reference": {
+    "repository": "tokenomics",
+    "commit": "a1a61a86c1f80f88759a3108b4884ae00f53a78d",
+    "file": "google_app_scripts/tdg_shipping_planner/shipping_planner_api.gs"
+  },
+  "air_freight_rates_usd_per_kg": {
+    "200": 3.5,
+    "300": 3.4,
+    "500": 3.3,
+    "750": 3.3,
+    "1000": 3.2
+  },
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "air_freight_rates_notes": "The extracted PDF excerpt shows explicit lines for 200kg and 300kg only; the vendor states rates remain the same as the prior quotation, so higher tiers are carried forward from snapshot 20251104_1254 until superseded by explicit vendor text.",
+  "cost_components": {
+    "brazil_airline_charges_usd_per_shipment": 95.0,
+    "brazil_airline_charges_note": "Quoted as \"Airline charges in Brazil\" (USD 95.00 per shipment).",
+    "inland_transport_brazil": {
+      "formula": "695 + (0.0015 * cargo_value_usd)",
+      "base_usd": 695.0,
+      "cargo_value_multiplier": 0.0015,
+      "quote_text": "Inland in Brazil: USD 695.00 + 0.15% ad valoren (based on cargo value)"
+    },
+    "brazil_airport_charges": {
+      "formula": "max(0.30 * weight_kg, 250)",
+      "usd_per_kg": 0.3,
+      "minimum_usd": 250.0,
+      "quote_text": "Airport charges in Brazil: USD 0.30/kg – minimum USD 250.00"
+    },
+    "us_airline_terminal_fee_usd_per_shipment_vendor_quote": {
+      "amount_usd": 200.0,
+      "quote_text": "Airline Terminal Fee US: USD 200.00 for TAP"
+    },
+    "us_airline_terminal_fee_usd_per_shipment_module_model": 212.5,
+    "us_import_handling_fee_usd_per_shipment": 125.0,
+    "delivery_to_door_usd_vendor_quote": {
+      "amount_usd": 295.0,
+      "quote_text": "Delivery to the door: USD 295.00 w/ airport collection, dock to dock delivery"
+    },
+    "us_customs_clearance_usd_per_shipment": 150.0,
+    "invoice_line_items": {
+      "formula": "max(invoice_lines - 3, 0) * 5",
+      "included_lines": 3,
+      "extra_line_usd": 5.0
+    },
+    "fda_processing_usd_if_applicable": 100.0,
+    "bond_single_entry": {
+      "formula": "max(100, (6 * (cargo_value_usd / 1000)) + duty_amount_usd)",
+      "minimum_usd": 100.0,
+      "usd_per_1000_value": 6.0
+    },
+    "mpf_merchandise_processing_fee": {
+      "formula": "min(max(0.003464 * cargo_value_usd, 33.58), 651.50)",
+      "rate": 0.003464,
+      "minimum_usd": 33.58,
+      "maximum_usd": 651.5
+    },
+    "us_customs_exam_charges": {
+      "formula": "customs_exams * 250",
+      "usd_per_exam": 250.0,
+      "notes": "Includes handling assumptions in module"
+    },
+    "duty": {
+      "formula": "cargo_value_usd * (duty_percent / 100)",
+      "included_when": "duty_percent > 0"
+    }
+  },
+  "module_defaults": {
+    "cargo_value_default_formula": "weight_kg * 5",
+    "invoice_lines_default": 3,
+    "customs_exams_default": 0,
+    "duty_percent_default": 0
+  },
+  "notes": [
+    "This quotation explicitly names Ilheus, BA, Brazil and San Francisco, CA 94117.",
+    "Vendor states rates remain the same as last time quoted; compare with snapshots/20251104_1254_omega-services_not-san-francisco-in-quote_freight-pricing.json for deltas in quoted ancillary fees (terminal fee TAP amount, door delivery amount)."
+  ]
+}

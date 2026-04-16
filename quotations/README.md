@@ -19,3 +19,11 @@ The source timestamp comes from quote text:
 `Tue, Nov 4, 2025 at 12:54 PM`
 
 If timezone is unknown in source material, keep timezone unknown in related JSON metadata.
+
+## Example (explicit vendor route + operator download filename)
+
+`20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_quote.pdf`
+
+The email timestamp inside the PDF is `Wed, Apr 15, 2026 at 7:48 AM`, so the repository
+filename uses `20260415_0748…` even if the operator saved the export locally as
+`20260414 Quotation Mega services.pdf`.
