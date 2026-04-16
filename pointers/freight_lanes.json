@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "registry_id": "freight_lanes",
+  "description": "Index of freight lanes with pointers to the latest archived pricing snapshot JSON. Consumers fetch this file first, then fetch each lane's latest_snapshot_url.",
+  "lanes": [
+    {
+      "lane_id": "ilheus_ba_to_san_francisco_ca94117",
+      "title": "Ilhéus, BA → San Francisco, CA 94117 (Kirsten)",
+      "calculator": "tiered_per_kg_plus_line_items",
+      "latest_snapshot_url": "https://raw.githubusercontent.com/TrueSightDAO/agroverse-freight-audit/main/snapshots/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_freight-pricing.json",
+      "snapshot_path_in_repo": "snapshots/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_freight-pricing.json"
+    },
+    {
+      "lane_id": "ilheus_ba_to_austin_tx78704_3rd_eye_cafe",
+      "title": "Ilhéus, BA → Austin, TX 78704 (3rd Eye Cafe)",
+      "calculator": "lump_sum_air_freight_scaled_by_weight",
+      "latest_snapshot_url": "https://raw.githubusercontent.com/TrueSightDAO/agroverse-freight-audit/main/snapshots/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_freight-pricing.json",
+      "snapshot_path_in_repo": "snapshots/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_freight-pricing.json"
+    }
+  ]
+}

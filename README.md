@@ -13,6 +13,8 @@ point in time.
 - `quotations/`: source vendor quote PDFs (timestamped from quote itself)
 - `snapshots/`: machine-readable pricing model snapshots used by modules
 - `manifests/`: archived shipping manifest references and normalized metadata
+- `pointers/`: stable JSON indexes (for example `freight_lanes.json`) that point clients at
+  the latest snapshot URL per supported freight lane
 
 ## Filename date convention
 
@@ -67,3 +69,8 @@ the email timestamp inside the PDF is `2026-04-15 07:48`; repository filenames f
 covers **Matheus pickup in Ilheus, BA** to **Austin, TX 78704** (operator destination:
 **3rd Eye Cafe**), archived alongside
 `snapshots/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_freight-pricing.json`.
+
+## Freight lane registry (for clients)
+
+`pointers/freight_lanes.json` lists supported lanes and the **latest** snapshot URL for
+each. See `pointers/README.md` for the stable raw GitHub URL used by the Shipping Planner.
