@@ -1,0 +1,101 @@
+{
+  "snapshot_id": "omega-services-20260324-1035-ilheus-ba-to-austin-tx78704-3rd-eye-cafe",
+  "effective_timestamp_local": "2026-03-24T10:35:00",
+  "timezone": "unknown",
+  "timestamp_source_text": "Tue, Mar 24, 2026 at 10:35 AM",
+  "source_vendor": "Omega / Mega Services (5CL)",
+  "source_quote_file": "quotations/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_quote.pdf",
+  "source_quote_original_filename": "Quotation Omega services ilheus to 3rd eye cafe.pdf",
+  "operator_shipment_context": {
+    "origin_contact": "Matheus",
+    "origin_location_text": "Ilheus area, Bahia (BA), Brazil",
+    "destination_contact": "3rd Eye Cafe",
+    "destination_location_text": "Austin, TX 78704, USA"
+  },
+  "geographic_scope": {
+    "vendor_pdf_route_line_explicit": true,
+    "vendor_pickup_line_text": "Pick up address: R. Cel. Paiva, 46 - Centro, Ilhéus - BA, 45653-310, Brazil",
+    "vendor_delivery_line_text": "Delivery: Austin, TX 78704",
+    "austin_named_in_vendor_quote_pdf": true,
+    "ilheus_named_in_vendor_quote_pdf": true
+  },
+  "shipment_characteristics_on_quote": {
+    "pallet_count": 1,
+    "pallet_dimensions_cm_text": "122 x 100 x 100 cm",
+    "declared_weight_kg": 180,
+    "chargeable_weight_kg": 210,
+    "chargeable_weight_basis_note": "Vendor states chargeable weight is 210 kgs based on dimensions provided."
+  },
+  "code_reference": {
+    "repository": "tokenomics",
+    "commit": "a1a61a86c1f80f88759a3108b4884ae00f53a78d",
+    "file": "google_app_scripts/tdg_shipping_planner/shipping_planner_api.gs"
+  },
+  "air_freight": {
+    "mode_text": "Air Freight SSA-IAH",
+    "total_usd_vendor_quote": 735.0,
+    "chargeable_weight_kg": 210,
+    "implied_usd_per_kg_on_chargeable_weight": 3.5,
+    "quote_text": "Air Freight SSA-IAH: USD 735.00 (based on the dimensions you informed, chargeable weight is 210 kgs)"
+  },
+  "cost_components": {
+    "inland_transport_brazil": {
+      "formula": "695 + (0.0015 * cargo_value_usd)",
+      "base_usd": 695.0,
+      "cargo_value_multiplier": 0.0015,
+      "quote_text": "Inland in Brazil: USD 695.00 + 0.15% ad valoren (based on cargo value)"
+    },
+    "brazil_airport_charges": {
+      "formula": "max(0.30 * weight_kg, 250)",
+      "usd_per_kg": 0.3,
+      "minimum_usd": 250.0,
+      "quote_text": "Airport charges in Brazil: USD 0.30/kg – minimum USD 250.00"
+    },
+    "us_airline_terminal_fee_usd_per_shipment_vendor_quote": {
+      "amount_usd": 200.0,
+      "quote_text": "Airline Terminal Fee: USD 200.00 for TAP"
+    },
+    "us_import_handling_fee_usd_per_shipment": 125.0,
+    "delivery_to_door_usd_vendor_quote": {
+      "amount_usd": 355.0,
+      "quote_text": "Delivery to the door: USD 355.00 w/ airport collection, dock to dock delivery"
+    },
+    "us_customs_clearance_usd_per_shipment": 150.0,
+    "invoice_line_items": {
+      "formula": "max(invoice_lines - 3, 0) * 5",
+      "included_lines": 3,
+      "extra_line_usd": 5.0
+    },
+    "fda_processing_usd_if_applicable": 100.0,
+    "bond_single_entry": {
+      "formula": "max(100, (6 * (cargo_value_usd / 1000)) + duty_amount_usd)",
+      "minimum_usd": 100.0,
+      "usd_per_1000_value": 6.0
+    },
+    "mpf_merchandise_processing_fee": {
+      "formula": "min(max(0.003464 * cargo_value_usd, 33.58), 651.50)",
+      "rate": 0.003464,
+      "minimum_usd": 33.58,
+      "maximum_usd": 651.5
+    },
+    "us_customs_exam_charges": {
+      "formula": "customs_exams * 250",
+      "usd_per_exam": 250.0,
+      "notes": "Includes handling assumptions in module"
+    },
+    "duty": {
+      "formula": "cargo_value_usd * (duty_percent / 100)",
+      "included_when": "duty_percent > 0"
+    }
+  },
+  "module_defaults": {
+    "cargo_value_default_formula": "weight_kg * 5",
+    "invoice_lines_default": 3,
+    "customs_exams_default": 0,
+    "duty_percent_default": 0
+  },
+  "notes": [
+    "Vendor states rates remain the same as last time quoted; this lane is priced as a specific SSA-IAH air freight lump sum for the stated dimensions/chargeable weight, not the tiered per-kg table used in other snapshots.",
+    "This PDF excerpt does not list a separate Brazil airline documentation line item (compare with the 2026-04-15 San Francisco lane snapshot)."
+  ]
+}

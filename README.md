@@ -31,6 +31,8 @@ Examples:
 - `snapshots/20251104_1254_omega-services_not-san-francisco-in-quote_freight-pricing.json`
 - `quotations/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_quote.pdf`
 - `snapshots/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_freight-pricing.json`
+- `quotations/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_quote.pdf`
+- `snapshots/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_freight-pricing.json`
 - `manifests/20260406_matheus-reis_manifests.json`
 
 When the vendor document does not name a US city (for example San Francisco), include that
@@ -58,3 +60,10 @@ is archived alongside
 Note: the operator download filename may use `YYYYMMDD` (for example `20260414 …`) while
 the email timestamp inside the PDF is `2026-04-15 07:48`; repository filenames follow the
 **email timestamp** when present, per the timestamp policy above.
+
+## Vendor quotation (Ilheus to Austin / 3rd Eye Cafe)
+
+`quotations/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_quote.pdf`
+covers **Matheus pickup in Ilheus, BA** to **Austin, TX 78704** (operator destination:
+**3rd Eye Cafe**), archived alongside
+`snapshots/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_freight-pricing.json`.
