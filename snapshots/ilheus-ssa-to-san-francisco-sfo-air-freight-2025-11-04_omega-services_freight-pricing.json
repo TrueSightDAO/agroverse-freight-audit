@@ -1,0 +1,86 @@
+{
+  "snapshot_id": "ilheus-ssa-to-san-francisco-sfo-2025-11-04",
+  "effective_timestamp_local": "2025-11-04T20:54:20",
+  "timezone": "UTC",
+  "timestamp_source_text": "Email Date: 2025-11-04T20:54:20.000Z",
+  "source_vendor": "5CL",
+  "source_quote_file": "freight_quotes/2025/11/ilheus-ssa-to-san-francisco-sfo-air-freight-2025-11-04.pdf",
+  "source_quote_original_filename": "unknown",
+  "operator_shipment_context": "Airport to Airport Air Freight",
+  "geographic_scope": "Ilheus (SSA) to San Francisco (SFO)",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 200,
+      "max_weight_kg": 299,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 300,
+      "max_weight_kg": 499,
+      "rate_usd_per_kg": 3.4
+    },
+    {
+      "min_weight_kg": 500,
+      "max_weight_kg": 749,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 750,
+      "max_weight_kg": 999,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 1000,
+      "max_weight_kg": 0,
+      "rate_usd_per_kg": 3.2
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": {
+    "export_documentation_usd": 95,
+    "export_customs_clearance": "for the account of the shipper",
+    "airline_terminal_fee_usd": {
+      "min": 200,
+      "max": 225
+    },
+    "import_handling_fee_usd": 125,
+    "delivery_to_door": "available upon request – please reconfirm address",
+    "us_customs_clearance_usd": 150,
+    "invoice_line_items": "1st 3 line-items free, $5.00 per line thereafter",
+    "fda_processing_usd": 100,
+    "bond_usd": {
+      "rate": "6.00 per 1000 of value plus duty",
+      "minimum": 100
+    },
+    "duties_mpf": {
+      "rate_percent": 0.3464,
+      "minimum_usd": 33.58,
+      "maximum_usd": 651.5
+    },
+    "customs_exam_handling_charge_usd": 125
+  },
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "dimension_unit": "cm",
+    "max_pallet_dimensions": {
+      "length_cm": 300,
+      "width_cm": 200,
+      "height_cm": 160,
+      "weight_kg": 4000
+    }
+  },
+  "notes": [
+    "Ocean freight deemed significantly expensive due to infrastructure and distance to closest port.",
+    "Local charges and delivery to SSA airport still being worked on.",
+    "All shipments entering the US are subject to US Customs inspection and exams at their discretion.",
+    "Exam charges billed at cost with additional handling charge of $125.00 per exam.",
+    "Surety Bond required for all customs entries; rates vary for standard cargo and shipments requiring clearance through other governmental agencies."
+  ]
+}
