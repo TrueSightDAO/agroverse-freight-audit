@@ -1,0 +1,85 @@
+{
+  "snapshot_id": "ilheus-br-to-austin-tx-us-2026-03-23",
+  "effective_timestamp_local": "2026-03-23T13:50:00",
+  "timezone": "America/Sao_Paulo",
+  "timestamp_source_text": "Email date: Monday, March 23, 2026 at 1:50 PM",
+  "source_vendor": "5CL",
+  "source_quote_file": "freight_quotes/2026/ilheus-br-to-austin-tx-us-2026-03-23.pdf",
+  "source_quote_original_filename": "unknown",
+  "operator_shipment_context": "Door to Door shipment of cacao mass (HS Code 1803.10)",
+  "geographic_scope": "Ilheus, Brazil (R. Cel. Paiva, 46, Centro, Ilhéus - BA, 45653-310) to Austin, TX, USA (1701 Toomey Rd, Austin, TX 78704)",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 200,
+      "max_weight_kg": 299,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 300,
+      "max_weight_kg": 499,
+      "rate_usd_per_kg": 3.4
+    },
+    {
+      "min_weight_kg": 500,
+      "max_weight_kg": 749,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 750,
+      "max_weight_kg": 999,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 1000,
+      "max_weight_kg": 9999,
+      "rate_usd_per_kg": 3.2
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": {
+    "inland_usd": 695,
+    "inland_ad_valorem_percent": 0.15,
+    "airport_charges_brazil_usd_per_kg": 0.3,
+    "airport_charges_brazil_minimum_usd": 250,
+    "export_documentation_usd": 95,
+    "export_customs_clearance": "for the account of the shipper",
+    "airline_terminal_fee_usd": {
+      "min": 200,
+      "max": 225
+    },
+    "import_handling_fee_usd": 125,
+    "delivery_to_door": "available upon request",
+    "us_customs_clearance_usd": 150,
+    "invoice_line_items_usd_per_line_after_3": 5,
+    "fda_processing_usd": 100,
+    "bond_usd_per_1000_value_plus_duty": 6,
+    "bond_minimum_usd": 100,
+    "duties_mpf_percent": 0.3464,
+    "duties_mpf_minimum_usd": 33.58,
+    "duties_mpf_maximum_usd": 651.5,
+    "exam_handling_charge_usd": 125
+  },
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "dimension_unit": "cm",
+    "max_pallet_dimensions": {
+      "width": 300,
+      "length": 200,
+      "height": 160
+    },
+    "max_pallet_weight_kg": 4000
+  },
+  "notes": [
+    "Air freight recommended over ocean freight due to infrastructure and distance to closest port in Brazil.",
+    "Pricing for air freight is usually valid for 15 days only.",
+    "All shipments entering the commerce of the U.S. are subject to U.S. Customs inspection and exams at their discretion.",
+    "A Surety Bond is required for all customs entries; additional rates apply for shipments requiring clearance through other governmental agencies."
+  ]
+}
