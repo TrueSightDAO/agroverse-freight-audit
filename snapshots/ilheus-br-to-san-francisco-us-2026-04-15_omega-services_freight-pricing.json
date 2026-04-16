@@ -1,0 +1,57 @@
+{
+  "snapshot_id": "ilheus-br-to-san-francisco-us-2026-04-15",
+  "effective_timestamp_local": "2026-04-15T14:48:34",
+  "timezone": "UTC",
+  "timestamp_source_text": "Email Date: 2026-04-15T14:48:34.000Z",
+  "source_vendor": "5CL",
+  "source_quote_file": "quotes/ilheus-br-to-san-francisco-us-2026-04-15.pdf",
+  "source_quote_original_filename": "unknown",
+  "operator_shipment_context": "Door-to-Door shipment of cacao supplies",
+  "geographic_scope": "Ilhéus, BA, Brazil (45653-310) to San Francisco, CA, USA (94117)",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 0,
+      "max_weight_kg": 200,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 201,
+      "max_weight_kg": 300,
+      "rate_usd_per_kg": 3.4
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300
+  ],
+  "cost_components": {
+    "inland_brazil_usd": 695,
+    "inland_brazil_ad_valorem_percent": 0.15,
+    "airport_charges_brazil_usd_per_kg": 0.3,
+    "airport_charges_brazil_minimum_usd": 250,
+    "airline_charges_brazil_usd_per_shipment": 95,
+    "airline_terminal_fee_us_usd": 200,
+    "import_handling_fee_usd_per_shipment": 125,
+    "delivery_to_door_usd": 295,
+    "us_customs_clearance_usd": 150,
+    "invoice_line_items_usd_per_line_after_3": 5,
+    "fda_processing_usd": 100,
+    "bond_usd_per_1000_value_plus_duty": 6,
+    "bond_minimum_usd": 100,
+    "duties_mpf_percent": 0.3464,
+    "duties_mpf_minimum_usd": 33.58,
+    "duties_mpf_maximum_usd": 651.5,
+    "exam_handling_charge_usd_per_exam": 125
+  },
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "default_weight_tier_kg": 200
+  },
+  "notes": [
+    "Rates remain the same as last quoted.",
+    "All shipments entering the US are subject to customs inspection and exams at the discretion of US Customs.",
+    "Exam charges billed at cost with an additional handling charge of $125.00 per exam.",
+    "Surety Bond required for all customs entries; rates vary for standard cargo and shipments requiring clearance through other governmental agencies."
+  ]
+}
