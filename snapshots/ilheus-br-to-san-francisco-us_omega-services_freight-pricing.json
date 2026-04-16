@@ -1,0 +1,76 @@
+{
+  "snapshot_id": "ilheus_br_to_san_francisco_us_2026-04-06",
+  "effective_timestamp_local": "2026-04-06T21:56:32",
+  "timezone": "UTC",
+  "timestamp_source_text": "Email Date: 2026-04-06T21:56:32.000Z",
+  "source_vendor": "5CL",
+  "source_quote_file": "freight_quotes/ilheus_br_to_san_francisco_us_2026-04-06.pdf",
+  "source_quote_original_filename": "quotation_ilheus_to_sfo_2026-04-06.pdf",
+  "operator_shipment_context": "Door-to-Door and Door-to-Airport shipments of cacao products",
+  "geographic_scope": "Ilheus, Brazil (R. Cel. Paiva, 46 - Centro, Ilhéus - BA, 45653-310) to San Francisco, CA, USA (1423 Hayes St, San Francisco, CA 94117)",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 200,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 300,
+      "rate_usd_per_kg": 3.4
+    },
+    {
+      "min_weight_kg": 500,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 750,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 1000,
+      "rate_usd_per_kg": 3.2
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": {
+    "inland_brazil_usd": 695,
+    "inland_brazil_ad_valorem_percent": 0.15,
+    "airport_charges_brazil_usd_per_kg": 0.3,
+    "airport_charges_brazil_minimum_usd": 250,
+    "export_documentation_usd": 95,
+    "airline_terminal_fee_usd": {
+      "min": 200,
+      "max": 225
+    },
+    "import_handling_fee_usd": 125,
+    "us_customs_clearance_usd": 150,
+    "invoice_line_items_usd": {
+      "first_3_free": true,
+      "per_line_after": 5
+    },
+    "fda_processing_usd": 100,
+    "bond_usd_per_1000_value_plus_duty": 6,
+    "bond_minimum_usd": 100,
+    "mpf_percent": 0.3464,
+    "mpf_minimum_usd": 33.58,
+    "mpf_maximum_usd": 651.5,
+    "exam_handling_charge_usd": 125
+  },
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "default_shipment_size_kg": 250
+  },
+  "notes": [
+    "Rates provided for multiple weight brackets from 200kg to 1000kg.",
+    "Inland charges in Brazil are for a dedicated truck and remain constant across weight brackets.",
+    "Customs clearance and FDA processing fees are applicable as per US regulations.",
+    "All shipments are subject to US Customs inspection and exams at their discretion.",
+    "Delivery to door charges available upon request and reconfirmation of address."
+  ]
+}
