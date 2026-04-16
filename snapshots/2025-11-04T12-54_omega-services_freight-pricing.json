@@ -1,0 +1,81 @@
+{
+  "snapshot_id": "omega-services-2025-11-04T12-54",
+  "effective_timestamp_local": "2025-11-04T12:54:00",
+  "timezone": "unknown",
+  "timestamp_source_text": "Tue, Nov 4, 2025 at 12:54 PM",
+  "source_vendor": "Omega / Mega Services (5CL)",
+  "source_quote_file_expected": "quotations/2025-11-04T12-54_omega-services_quote.pdf",
+  "source_quote_original_filename": "Quotation Mega services.pdf",
+  "code_reference": {
+    "repository": "tokenomics",
+    "commit": "a1a61a86c1f80f88759a3108b4884ae00f53a78d",
+    "file": "google_app_scripts/tdg_shipping_planner/shipping_planner_api.gs"
+  },
+  "air_freight_rates_usd_per_kg": {
+    "200": 3.5,
+    "300": 3.4,
+    "500": 3.3,
+    "750": 3.3,
+    "1000": 3.2
+  },
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": {
+    "export_documentation_usd_per_shipment": 95.0,
+    "inland_transport_brazil": {
+      "formula": "695 + (0.0015 * cargo_value_usd)",
+      "base_usd": 695.0,
+      "cargo_value_multiplier": 0.0015
+    },
+    "brazil_airport_charges": {
+      "formula": "max(0.30 * weight_kg, 250)",
+      "usd_per_kg": 0.3,
+      "minimum_usd": 250.0
+    },
+    "us_airline_terminal_fee_usd_per_shipment": 212.5,
+    "us_import_handling_fee_usd_per_shipment": 125.0,
+    "us_customs_clearance_usd_per_shipment": 150.0,
+    "invoice_line_items": {
+      "formula": "max(invoice_lines - 3, 0) * 5",
+      "included_lines": 3,
+      "extra_line_usd": 5.0
+    },
+    "fda_processing_usd_if_applicable": 100.0,
+    "bond_single_entry": {
+      "formula": "max(100, (6 * (cargo_value_usd / 1000)) + duty_amount_usd)",
+      "minimum_usd": 100.0,
+      "usd_per_1000_value": 6.0
+    },
+    "mpf_merchandise_processing_fee": {
+      "formula": "min(max(0.003464 * cargo_value_usd, 33.58), 651.50)",
+      "rate": 0.003464,
+      "minimum_usd": 33.58,
+      "maximum_usd": 651.5
+    },
+    "us_customs_exam_charges": {
+      "formula": "customs_exams * 250",
+      "usd_per_exam": 250.0,
+      "notes": "Includes handling assumptions in module"
+    },
+    "duty": {
+      "formula": "cargo_value_usd * (duty_percent / 100)",
+      "included_when": "duty_percent > 0"
+    }
+  },
+  "module_defaults": {
+    "cargo_value_default_formula": "weight_kg * 5",
+    "invoice_lines_default": 3,
+    "customs_exams_default": 0,
+    "duty_percent_default": 0
+  },
+  "notes": [
+    "Timestamp taken from quote email text in source PDF export.",
+    "Timezone is not explicit in the extracted quote text.",
+    "This snapshot is intended as immutable historical baseline."
+  ]
+}

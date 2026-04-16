@@ -1,0 +1,18 @@
+{
+  "archive_date": "2026-04-06",
+  "shipper_or_contact": "Matheus Reis",
+  "records": [
+    {
+      "filename": "250_kg_Shipping_Manifest_Matheus_Reis_2026-04-06.pdf",
+      "declared_weight_kg": 250,
+      "source_location": "/Users/garyjob/Downloads/250_kg_Shipping_Manifest_Matheus_Reis_2026-04-06.pdf"
+    },
+    {
+      "filename": "375_kg_Shipping_Manifest_Matheus_Reis_2026-04-06.pdf",
+      "declared_weight_kg": 375,
+      "source_location": "/Users/garyjob/Downloads/375_kg_Shipping_Manifest_Matheus_Reis_2026-04-06.pdf"
+    }
+  ],
+  "pricing_snapshot_reference": "snapshots/2025-11-04T12-54_omega-services_freight-pricing.json",
+  "notes": "Raw PDFs can be copied into this repository under manifests/pdf/ if desired."
+}
