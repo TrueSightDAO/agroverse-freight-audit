@@ -1,11 +1,19 @@
 {
-  "snapshot_id": "omega-services-2025-11-04T12-54",
+  "snapshot_id": "omega-services-2025-11-04T12-54-not-san-francisco-in-quote",
   "effective_timestamp_local": "2025-11-04T12:54:00",
   "timezone": "unknown",
   "timestamp_source_text": "Tue, Nov 4, 2025 at 12:54 PM",
   "source_vendor": "Omega / Mega Services (5CL)",
-  "source_quote_file_expected": "quotations/2025-11-04T12-54_omega-services_quote.pdf",
+  "source_quote_file": "quotations/2025-11-04T12-54_omega-services_not-san-francisco-in-quote_quote.pdf",
   "source_quote_original_filename": "Quotation Mega services.pdf",
+  "geographic_scope": {
+    "san_francisco_named_in_vendor_quote_pdf": false,
+    "us_destination_city_named_in_vendor_quote_pdf": false,
+    "vendor_quote_us_charges_context": "Described as local charges in the US; no US city named.",
+    "vendor_quote_origin_context": "Brazil team; delivery to SSA airport mentioned (Brazil).",
+    "vendor_quote_delivery_note": "Door delivery available upon request; vendor asks to reconfirm address.",
+    "audit_filename_note": "Filename includes not-san-francisco-in-quote because the PDF does not state San Francisco."
+  },
   "code_reference": {
     "repository": "tokenomics",
     "commit": "a1a61a86c1f80f88759a3108b4884ae00f53a78d",
@@ -76,6 +84,7 @@
   "notes": [
     "Timestamp taken from quote email text in source PDF export.",
     "Timezone is not explicit in the extracted quote text.",
+    "Vendor PDF text does not name San Francisco; internal tooling may still assume SF for unrelated flows.",
     "This snapshot is intended as immutable historical baseline."
   ]
 }

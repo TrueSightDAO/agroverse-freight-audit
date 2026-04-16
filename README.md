@@ -21,8 +21,11 @@ document/email when available (not commit time).
 
 Example:
 
-- `2025-11-04T12-54_omega-services_quote.pdf`
-- `2025-11-04T12-54_omega-services_freight-pricing.json`
+- `2025-11-04T12-54_omega-services_not-san-francisco-in-quote_quote.pdf`
+- `2025-11-04T12-54_omega-services_not-san-francisco-in-quote_freight-pricing.json`
+
+When the vendor document does not name a US city (for example San Francisco), include that
+fact in the filename slug and in JSON `geographic_scope` so audits stay honest.
 
 If timezone is unknown from source, include `timezone: "unknown"` in JSON metadata and
 store the original timestamp text exactly as written in the quote.
