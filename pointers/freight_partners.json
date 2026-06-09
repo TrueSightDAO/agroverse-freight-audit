@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "registry_id": "freight_partners",
+  "description": "Freighting and customs brokerage partners. Contact details sourced from Gmail threads. For per-lane pricing snapshots see freight_lanes.json.",
+  "partners": [
+    {
+      "partner_id": "omega-servicos",
+      "name": "Omega Serviços",
+      "role": "Freight forwarder and customs broker in Brazil",
+      "territory": "Brazil (Ilhéus, Bahia → international)",
+      "services": [
+        "Road transport (origin → airport/hub)",
+        "Palletization and packing to airline standards",
+        "Fumigation",
+        "Customs documentation and clearance",
+        "Air freight booking coordination"
+      ],
+      "website": "https://www.omegaservicos.com.br",
+      "contacts": [
+        {
+          "name": "Isis Ribeiro",
+          "email": "isis.ribeiro@omegaservicos.com.br",
+          "role": "Operations — primary contact for shipments, bookings, and coordination"
+        },
+        {
+          "name": "Ana Barros",
+          "email": "ana.barros@omegaservicos.com.br",
+          "role": "Operations — handles quotes and pallet pricing"
+        },
+        {
+          "name": "Helesson Bastos",
+          "email": "helesson.bastos@omegaservicos.com.br",
+          "role": "CC on all shipment threads"
+        }
+      ],
+      "group_aliases": [
+        "comercial@omegaservicos.com.br",
+        "exportacao@omegaservicos.com.br"
+      ]
+    },
+    {
+      "partner_id": "5cl-rs",
+      "name": "5cl.rs",
+      "role": "International freight broker",
+      "territory": "Cross-border air freight (Brazil → US, Brazil → Asia)",
+      "services": [
+        "Air freight carrier negotiation and rate quotes",
+        "Booking with airlines",
+        "Shipment coordination between forwarder and destination"
+      ],
+      "contacts": [
+        {
+          "name": "Graziela Vedana",
+          "email": "Graziela@5cl.rs",
+          "role": "Agent — primary contact for rate quotes and carrier bookings"
+        }
+      ],
+      "notes": "Acts as the intermediary between the Brazil-side forwarder (Omega) and the destination. Negotiates carrier rates and coordinates the international leg."
+    },
+    {
+      "partner_id": "matheus-reis",
+      "name": "Matheus Reis",
+      "role": "DAO warehouse custodian in Ilhéus, Bahia",
+      "territory": "Ilhéus, Bahia, Brazil",
+      "services": [
+        "Physical inventory custody at the Ilhéus warehouse",
+        "Packing, weighing, and preparing shipments for pickup",
+        "Coordination with forwarder for collection timing"
+      ],
+      "contacts": [
+        {
+          "name": "Matheus Reis",
+          "email": "theus.reis.ssa@gmail.com",
+          "phone": "+55 11 9 91413-5328",
+          "role": "Sales Manager — primary contact for warehouse access and shipment preparation"
+        },
+        {
+          "name": "Rebecca",
+          "phone": "+55 73 99108-2946",
+          "role": "On-site at warehouse — physical access, keys, fashion store downstairs"
+        }
+      ]
+    }
+  ]
+}
