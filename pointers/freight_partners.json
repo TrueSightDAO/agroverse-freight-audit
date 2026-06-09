@@ -42,11 +42,11 @@
       "partner_id": "5cl-rs",
       "name": "5cl.rs",
       "role": "International freight broker",
-      "territory": "Cross-border air freight (Brazil → US, Brazil → Asia)",
+      "territory": "Cross-border air freight (Brazil → US)",
       "services": [
         "Air freight carrier negotiation and rate quotes",
         "Booking with airlines",
-        "Shipment coordination between forwarder and destination"
+        "Shipment coordination between Omega (Brazil forwarder) and US destination"
       ],
       "contacts": [
         {
