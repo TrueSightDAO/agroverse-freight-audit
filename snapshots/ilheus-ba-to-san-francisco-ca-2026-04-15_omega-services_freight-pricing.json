@@ -1,0 +1,56 @@
+{
+  "snapshot_id": "ilheus-ba-to-san-francisco-ca-2026-04-15-001",
+  "effective_timestamp_local": "2026-04-15T11:53:00",
+  "timezone": "America/Sao_Paulo",
+  "timestamp_source_text": "Email date: Wed, Apr 15, 2026 at 11:53 AM",
+  "source_vendor": "5CL Logistics",
+  "source_quote_file": "freight_quotes/2026/ilheus-ba-to-san-francisco-ca-2026-04-15.pdf",
+  "source_quote_original_filename": "unknown",
+  "operator_shipment_context": "Door-to-Door shipment of cacao products (nibs, mass, almonds) from Ilhéus, Brazil to San Francisco, CA",
+  "geographic_scope": "Ilhéus, BA, Brazil (R. Cel. Paiva, 46 - Centro, Ilhéus - BA, 45653-310) to San Francisco, CA, USA (1423 Hayes St, San Francisco, CA 94117)",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 200,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 300,
+      "rate_usd_per_kg": 3.4
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300
+  ],
+  "cost_components": {
+    "inland_brazil_usd": 695,
+    "inland_brazil_ad_valorem_percent": 0.15,
+    "airport_charges_brazil_usd_per_kg": 0.3,
+    "airport_charges_brazil_minimum_usd": 250,
+    "airline_charges_brazil_usd_per_shipment": 95,
+    "airline_terminal_fee_us_usd": 200,
+    "import_handling_fee_usd_per_shipment": 125,
+    "delivery_to_door_usd": 295,
+    "us_customs_clearance_usd": 150,
+    "invoice_line_items_usd_per_line_after_3": 5,
+    "fda_processing_usd": 100,
+    "bond_usd_per_1000_value_plus_duty": 6,
+    "bond_minimum_usd": 100,
+    "duties_mpf_percent": 0.3464,
+    "duties_mpf_minimum_usd": 33.58,
+    "duties_mpf_maximum_usd": 651.5,
+    "exam_handling_charge_usd_per_exam": 125
+  },
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "dimension_unit": "cm"
+  },
+  "notes": [
+    "All shipments entering the U.S. are subject to U.S. Customs inspection and exams at their discretion.",
+    "Exam charges will be billed at cost with an additional handling charge of $125.00 per exam.",
+    "A Surety Bond is required for all customs entries; rates vary for standard cargo or shipments requiring clearance through other governmental agencies (e.g., FDA, EPA, USDA).",
+    "FDA Importer of Record: TrueTech Inc (EIN: 88-3411514 | CBP Importer Number: 88-341151400).",
+    "Exporting Entity: Black King (Brazilian Exporter CNPJ: 50.042.585/0001-80)."
+  ]
+}
