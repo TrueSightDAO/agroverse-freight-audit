@@ -1,0 +1,90 @@
+{
+  "snapshot_id": "ilheus-br-to-austin-tx-us-2026-03-20",
+  "effective_timestamp_local": "2026-03-20T21:20:40",
+  "timezone": "UTC",
+  "timestamp_source_text": "Email Date: 2026-03-20T21:20:40.000Z",
+  "source_vendor": "5CL",
+  "source_quote_file": "freight_quotes/ilheus-br-to-austin-tx-us-air-freight-2026-03-20.pdf",
+  "source_quote_original_filename": "unknown",
+  "operator_shipment_context": "Door to Door and Airport to Airport options for cacao mass shipment",
+  "geographic_scope": "Ilheus, Brazil (R. Cel. Paiva, 46 - Centro, Ilhéus - BA, 45653-310) to Austin, TX, USA (3rd Eye Yoga and Meditation Lounge, 1701 Toomey Rd, Austin, TX 78704) or Austin Texas Airport",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 200,
+      "max_weight_kg": 299,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 300,
+      "max_weight_kg": 499,
+      "rate_usd_per_kg": 3.4
+    },
+    {
+      "min_weight_kg": 500,
+      "max_weight_kg": 749,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 750,
+      "max_weight_kg": 999,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 1000,
+      "max_weight_kg": 9999,
+      "rate_usd_per_kg": 3.2
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": {
+    "inland_usd": 695,
+    "inland_ad_valorem_percent": 0.15,
+    "airport_charges_brazil_usd_per_kg": 0.3,
+    "airport_charges_brazil_minimum_usd": 250,
+    "export_documentation_usd": 95,
+    "export_customs_clearance": "for the account of the shipper",
+    "airline_terminal_fee_usd": {
+      "min": 200,
+      "max": 225
+    },
+    "import_handling_fee_usd": 125,
+    "delivery_to_door_usd": "available upon request",
+    "us_customs_clearance_usd": 150,
+    "invoice_line_items_usd": {
+      "first_3_free": true,
+      "per_line_thereafter": 5
+    },
+    "fda_processing_usd": 100,
+    "bond_usd_per_1000_value_plus_duty": 6,
+    "bond_minimum_usd": 100,
+    "duties_mpf_percent": 0.3464,
+    "duties_mpf_minimum_usd": 33.58,
+    "duties_mpf_maximum_usd": 651.5,
+    "exam_handling_charge_usd": 125
+  },
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "dimension_unit": "cm",
+    "max_pallet_dimensions": {
+      "length_cm": 300,
+      "width_cm": 200,
+      "height_cm": 160
+    },
+    "max_pallet_weight_kg": 4000
+  },
+  "notes": [
+    "Pricing for air freight is usually valid for 15 days only.",
+    "Reconfirm prices at the end of February to secure space for March.",
+    "Ocean freight deemed significantly expensive due to infrastructure and distance to the closest port.",
+    "All shipments entering the commerce of the U.S. are subject to U.S. Customs inspection and exams.",
+    "Exam charges will be billed at cost with an additional handling charge of $125.00 per exam.",
+    "A Surety Bond is required for all customs entries."
+  ]
+}
