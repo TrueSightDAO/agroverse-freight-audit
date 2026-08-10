@@ -1,0 +1,79 @@
+{
+  "snapshot_id": "ilheus-ba-to-austin-tx-2026-03-24-001",
+  "effective_timestamp_local": "2026-03-24T12:35:00",
+  "timezone": "America/Sao_Paulo",
+  "timestamp_source_text": "Email date: Tue, Mar 24, 2026 at 12:35 PM",
+  "source_vendor": "5CL Logistics",
+  "source_quote_file": "freight_quotes/2026/ilheus-ba-to-austin-tx-2026-03-24.pdf",
+  "source_quote_original_filename": "unknown",
+  "operator_shipment_context": "Cacao shipment for retail partner",
+  "geographic_scope": {
+    "origin": "R. Cel. Paiva, 46 - Centro, Ilhéus - BA, 45653-310, Brazil",
+    "destination": "Austin, TX 78704, USA"
+  },
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 0,
+      "max_weight_kg": 200,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 201,
+      "max_weight_kg": 300,
+      "rate_usd_per_kg": 3.4
+    },
+    {
+      "min_weight_kg": 301,
+      "max_weight_kg": 500,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 501,
+      "max_weight_kg": 750,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 751,
+      "max_weight_kg": 1000,
+      "rate_usd_per_kg": 3.2
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": {
+    "inland_brazil_usd": 695,
+    "inland_brazil_ad_valorem_percent": 0.15,
+    "airport_charges_brazil_usd_per_kg": 0.3,
+    "airport_charges_brazil_minimum_usd": 250,
+    "air_freight_ssa_iah_usd": 735,
+    "airline_terminal_fee_usd": 200,
+    "import_handling_fee_usd": 125,
+    "delivery_to_door_usd": 355,
+    "us_customs_clearance_usd": 150,
+    "invoice_line_items_usd_per_line_after_3": 5,
+    "fda_processing_usd": 100,
+    "bond_usd_per_1000_value_plus_duty": 6,
+    "bond_minimum_usd": 100,
+    "duties_mpf_percent": 0.3464,
+    "duties_mpf_minimum_usd": 33.58,
+    "duties_mpf_maximum_usd": 651.5,
+    "exam_handling_charge_usd_per_exam": 125,
+    "export_documentation_usd": 95
+  },
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "dimension_unit": "cm"
+  },
+  "notes": [
+    "Rates provided are valid for 15 days only.",
+    "All shipments entering the US are subject to customs inspection and exams at the discretion of US Customs.",
+    "Exam charges will be billed at cost with an additional handling charge of $125.00 per exam.",
+    "A Surety Bond is required for all customs entries; rates may vary if clearance through other governmental agencies is required."
+  ]
+}
