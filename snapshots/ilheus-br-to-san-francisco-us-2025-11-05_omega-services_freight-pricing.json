@@ -1,0 +1,125 @@
+{
+  "snapshot_id": "ilheus-br-to-san-francisco-us-2025-11-05-5cl",
+  "effective_timestamp_local": "2025-11-05T09:29:00",
+  "timezone": "America/Sao_Paulo",
+  "timestamp_source_text": "Wed, Nov 5, 2025 at 9:29 AM",
+  "source_vendor": "5CL",
+  "source_quote_file": "freight_quotes/ilheus-br-to-san-francisco-us/2025-11-05-5cl-quote.pdf",
+  "source_quote_original_filename": "5cl-quotation-ilheus-sfo-2025-11-05.pdf",
+  "operator_shipment_context": "Air freight airport to airport with local charges",
+  "geographic_scope": "Ilheus, Brazil (SSA) to San Francisco, USA (SFO)",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 200,
+      "max_weight_kg": 299,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 300,
+      "max_weight_kg": 499,
+      "rate_usd_per_kg": 3.4
+    },
+    {
+      "min_weight_kg": 500,
+      "max_weight_kg": 749,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 750,
+      "max_weight_kg": 999,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 1000,
+      "max_weight_kg": 9999,
+      "rate_usd_per_kg": 3.2
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": [
+    {
+      "name": "Inland Charges (Brazil)",
+      "type": "fixed_plus_percentage",
+      "value_usd": 695,
+      "percentage_of_cargo_value": 0.0015
+    },
+    {
+      "name": "Airport Charges (Brazil)",
+      "type": "per_kg_with_minimum",
+      "rate_usd_per_kg": 0.3,
+      "minimum_usd": 250
+    },
+    {
+      "name": "Export Documentation",
+      "type": "fixed",
+      "value_usd": 95
+    },
+    {
+      "name": "Airline Terminal Fee (US)",
+      "type": "range",
+      "min_usd": 200,
+      "max_usd": 225
+    },
+    {
+      "name": "Import Handling Fee (US)",
+      "type": "fixed",
+      "value_usd": 125
+    },
+    {
+      "name": "US Customs Clearance",
+      "type": "fixed",
+      "value_usd": 150
+    },
+    {
+      "name": "Invoice Line Items (after first 3)",
+      "type": "per_unit",
+      "rate_usd": 5
+    },
+    {
+      "name": "FDA Processing (if applicable)",
+      "type": "conditional_fixed",
+      "value_usd": 100
+    },
+    {
+      "name": "Bond (if applicable)",
+      "type": "variable",
+      "description": "$6.00 per $1,000 of value plus duty, $100.00 minimum"
+    },
+    {
+      "name": "MPF (Merchandise Processing Fee)",
+      "type": "percentage_with_range",
+      "percentage": 0.003464,
+      "min_usd": 33.58,
+      "max_usd": 651.5
+    },
+    {
+      "name": "Customs Exam Handling Charge (if applicable)",
+      "type": "conditional_fixed",
+      "value_usd": 125
+    }
+  ],
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "dimension_unit": "cm",
+    "max_pallet_dimensions": {
+      "length_cm": 300,
+      "width_cm": 200,
+      "height_cm": 160,
+      "max_weight_kg": 4000
+    }
+  },
+  "notes": [
+    "Export customs clearance for the account of the shipper.",
+    "Delivery to door available upon request, address reconfirmation needed.",
+    "All shipments subject to US Customs inspection and exams at their discretion.",
+    "Exam charges billed at cost plus $125.00 handling fee per exam.",
+    "Surety Bond required for customs entries; rates vary for cargo requiring clearance through other governmental agencies."
+  ]
+}
