@@ -1,0 +1,127 @@
+{
+  "snapshot_id": "ilheus-sfo-2026-04-15",
+  "effective_timestamp_local": "2026-04-15T19:18:23",
+  "timezone": "UTC",
+  "timestamp_source_text": "Email Date: 2026-04-15T19:18:23.000Z",
+  "source_vendor": "5CL Logistics",
+  "source_quote_file": "quotes/5cl/ilheus-to-san-francisco-2026-04-15.pdf",
+  "source_quote_original_filename": "unknown",
+  "operator_shipment_context": "Door-to-Door shipment of cacao products",
+  "geographic_scope": "Ilhéus, BA, Brazil (R. Cel. Paiva, 46 - Centro, Ilhéus - BA, 45653-310) to San Francisco, CA, USA (1423 Hayes St, San Francisco, CA 94117)",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 0,
+      "max_weight_kg": 200,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 201,
+      "max_weight_kg": 300,
+      "rate_usd_per_kg": 3.4
+    },
+    {
+      "min_weight_kg": 301,
+      "max_weight_kg": 500,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 501,
+      "max_weight_kg": 750,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 751,
+      "max_weight_kg": 1000,
+      "rate_usd_per_kg": 3.2
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": [
+    {
+      "name": "Inland in Brazil",
+      "value_usd": 695,
+      "type": "fixed",
+      "description": "Base inland transport cost + 0.15% ad valorem based on cargo value"
+    },
+    {
+      "name": "Airport Charges in Brazil",
+      "value_usd": 0.3,
+      "type": "per_kg",
+      "minimum_usd": 250,
+      "description": "Per kg charge with minimum"
+    },
+    {
+      "name": "Airline Charges in Brazil",
+      "value_usd": 95,
+      "type": "fixed",
+      "description": "Per shipment export documentation fee"
+    },
+    {
+      "name": "Airline Terminal Fee US",
+      "value_usd": 200,
+      "type": "fixed",
+      "description": "Terminal fee for TAP airline"
+    },
+    {
+      "name": "Import Handling Fee",
+      "value_usd": 125,
+      "type": "fixed",
+      "description": "Per shipment handling fee"
+    },
+    {
+      "name": "Delivery to Door",
+      "value_usd": 295,
+      "type": "fixed",
+      "description": "Dock to dock delivery with airport collection"
+    },
+    {
+      "name": "US Customs Clearance",
+      "value_usd": 150,
+      "type": "fixed",
+      "description": "Customs clearance fee"
+    },
+    {
+      "name": "Invoice Line Items",
+      "value_usd": 5,
+      "type": "per_unit",
+      "description": "First 3 line-items free, $5.00 per line thereafter"
+    },
+    {
+      "name": "FDA Processing",
+      "value_usd": 100,
+      "type": "fixed",
+      "description": "FDA processing fee"
+    },
+    {
+      "name": "Bond",
+      "value_usd": 6,
+      "type": "per_thousand",
+      "minimum_usd": 100,
+      "description": "Bond fee per $1,000 of value plus duty"
+    },
+    {
+      "name": "Duties MPF",
+      "value_usd": 0.003464,
+      "type": "percentage",
+      "minimum_usd": 33.58,
+      "maximum_usd": 651.5,
+      "description": "Merchandise Processing Fee at cost"
+    }
+  ],
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "default_pallet_dimensions": "100 x 120 x 100 cm"
+  },
+  "notes": [
+    "All shipments entering the US are subject to US Customs inspection and exams at their discretion.",
+    "Exam charges will be billed at cost with an additional handling charge of $125.00 per exam.",
+    "A Surety Bond is required for all customs entries; rates may vary for shipments requiring clearance through other governmental agencies like FDA, EPA, USDA, etc."
+  ]
+}
