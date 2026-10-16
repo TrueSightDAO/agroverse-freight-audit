@@ -1,0 +1,58 @@
+{
+  "snapshot_id": "blackking-actuals-20261015-invoice-1026-08-ilheus-ba-to-san-francisco-ca94117",
+  "basis": "invoiced_actuals",
+  "effective_timestamp_local": "2026-10-15T00:00:00",
+  "timezone": "America/Los_Angeles",
+  "source_vendor": "5CL / Omega (Mega Services) — actual invoice",
+  "source_invoice_reference": "Invoice 1026-08 (Black King cargo, AWB 047-3175-3223)",
+  "source_quote_file": "brazil/sources/5CL_invoice_1026-08.pdf",
+  "operator_shipment_context": {
+    "origin_contact": "Matheus",
+    "origin_location_text": "Ilheus area, Bahia (BA), Brazil",
+    "destination_contact": "Kirsten",
+    "destination_location_text": "San Francisco, CA, USA",
+    "awb": "047-3175-3223"
+  },
+  "actuals_reference": true,
+  "packing_model_enabled": false,
+  "packing_model_disabled_reason": "This basis carries FLAT invoiced line items from invoice 1026-08; the dynamic pallet/packaging model is applied on the forward-quote basis, not here.",
+  "air_freight_rates_usd_per_kg": { "0": 0 },
+  "air_freight_rate_notes": "Air freight is a FLAT invoiced line (USD 1,241.00 billed at 365 kg x USD 3.40). The AWB records 349 kg; the 365 kg basis was accepted and paid as-is. Do NOT re-scale by weight for this actuals basis.",
+  "weight_tiers_kg": [],
+  "cost_components": {
+    "fixed_line_items": [
+      { "label": "Inland Freight in Brazil", "amount_usd": 1012.17, "note": "invoice 1026-08" },
+      { "label": "Airline Terminal Fee - Brazil (SSA)", "amount_usd": 345.00, "note": "invoice 1026-08" },
+      { "label": "Palletizing", "amount_usd": 65.00, "note": "billed for 2 pallets (= USD 32.50/pallet)" },
+      { "label": "Storage SSA + Saturday airport fee", "amount_usd": 112.19, "note": "invoice 1026-08" },
+      { "label": "Clearance - Export Customs BRA + SDA", "amount_usd": 414.59, "note": "invoice 1026-08" },
+      { "label": "Air Freight (365 kg x USD 3.40)", "amount_usd": 1241.00, "note": "flat invoiced line" },
+      { "label": "Airline Terminal Fee - USA", "amount_usd": 200.00, "note": "invoice 1026-08" },
+      { "label": "Air Freight Handling (US)", "amount_usd": 125.00, "note": "invoice 1026-08" },
+      { "label": "Inland Freight (US, SFO -> door)", "amount_usd": 885.00, "note": "invoice 1026-08; higher than the forward quote (295)" },
+      { "label": "Customs Clearance USA", "amount_usd": 150.00, "note": "invoice 1026-08" },
+      { "label": "Additional Invoice Lines (8 x USD 5)", "amount_usd": 40.00, "note": "invoice 1026-08" },
+      { "label": "FDA Filing", "amount_usd": 100.00, "note": "invoice 1026-08" },
+      { "label": "Customs Duties", "amount_usd": 128.53, "note": "invoice 1026-08" },
+      { "label": "Duty Advance Fee (0.1 x duty)", "amount_usd": 12.85, "note": "invoice 1026-08" },
+      { "label": "Bank Fees", "amount_usd": 35.00, "note": "invoice 1026-08" }
+    ]
+  },
+  "invoice_totals": {
+    "invoice_total_usd": 4866.33,
+    "wire_fee_usd": 30.00,
+    "booked_total_usd": 4896.33
+  },
+  "packing_actuals": {
+    "net_weight_kg": 302.06,
+    "pallets_actual": 2,
+    "pallet_unit_usd": 18.758,
+    "pallet_tare_kg": 10,
+    "box_mix_note": "22 x Reinforced Cardboard 10kg boxes (USD 2.036 ea) + 2 x Foam 120-kraft (USD 24.1097 ea) + 2 x Foam 46-bar (USD 5.1855 ea)"
+  },
+  "notes": [
+    "ACTUALS basis — parsed from invoice 1026-08. Added ALONGSIDE the forward Omega quote (A2); the forward quote remains the lane default.",
+    "Six invoiced components are absent from the forward quote: palletizing, SSA storage + Saturday fee, export-customs clearance, duty-advance fee, bank fees, and actual customs duties.",
+    "Landed freight = USD 4,896.33 / 302.06 kg net = USD 16.21/kg."
+  ]
+}
