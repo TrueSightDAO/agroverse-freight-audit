@@ -5,14 +5,23 @@
   "lanes": [
     {
       "lane_id": "ilheus_ba_to_san_francisco_ca94117",
-      "title": "Ilhéus, BA → San Francisco, CA 94117 (Kirsten)",
+      "title": "Ilh\u00e9us, BA \u2192 San Francisco, CA 94117 (Kirsten)",
       "calculator": "tiered_per_kg_plus_line_items",
       "latest_snapshot_url": "https://raw.githubusercontent.com/TrueSightDAO/agroverse-freight-audit/main/snapshots/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_freight-pricing.json",
-      "snapshot_path_in_repo": "snapshots/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_freight-pricing.json"
+      "snapshot_path_in_repo": "snapshots/20260415_0748_ilheus-ba-to-san-francisco-ca94117_omega-services_freight-pricing.json",
+      "latest_basis_label": "Forward quote (Omega, Apr 2026)",
+      "alternate_snapshots": [
+        {
+          "basis_id": "invoiced_actuals",
+          "label": "Invoiced actuals (5CL invoice 1026-08, Oct 2026)",
+          "snapshot_url": "https://raw.githubusercontent.com/TrueSightDAO/agroverse-freight-audit/main/snapshots/20261015_blackking_actuals_invoice-1026-08_ilheus-ba-to-san-francisco-ca94117_actuals.json",
+          "snapshot_path_in_repo": "snapshots/20261015_blackking_actuals_invoice-1026-08_ilheus-ba-to-san-francisco-ca94117_actuals.json"
+        }
+      ]
     },
     {
       "lane_id": "ilheus_ba_to_austin_tx78704_3rd_eye_cafe",
-      "title": "Ilhéus, BA → Austin, TX 78704 (3rd Eye Cafe)",
+      "title": "Ilh\u00e9us, BA \u2192 Austin, TX 78704 (3rd Eye Cafe)",
       "calculator": "lump_sum_air_freight_scaled_by_weight",
       "latest_snapshot_url": "https://raw.githubusercontent.com/TrueSightDAO/agroverse-freight-audit/main/snapshots/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_freight-pricing.json",
       "snapshot_path_in_repo": "snapshots/20260324_1035_ilheus-ba-to-austin-tx78704-3rd-eye-cafe_omega-services_freight-pricing.json"
