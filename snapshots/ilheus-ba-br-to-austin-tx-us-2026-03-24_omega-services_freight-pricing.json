@@ -1,0 +1,101 @@
+{
+  "snapshot_id": "ilheus-ba-br-to-austin-tx-us-2026-03-24-173530",
+  "effective_timestamp_local": "2026-03-24T17:35:30",
+  "timezone": "UTC",
+  "timestamp_source_text": "Email Date: 2026-03-24T17:35:30.000Z",
+  "source_vendor": "5CL Logistics",
+  "source_quote_file": "freight_quotes/ilheus-ba-br-to-austin-tx-us/2026-03-24_5cl_quote.pdf",
+  "source_quote_original_filename": "unknown",
+  "operator_shipment_context": "Door-to-door shipment of cacao mass (HS Code 1803.10)",
+  "geographic_scope": "Ilhéus, BA, Brazil (R. Cel. Paiva, 46 - Centro, Ilhéus - BA, 45653-310) to Austin, TX 78704, USA",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 0,
+      "max_weight_kg": 210,
+      "rate_usd_per_kg": 3.5
+    }
+  ],
+  "weight_tiers_kg": [
+    210
+  ],
+  "cost_components": [
+    {
+      "component": "Inland in Brazil",
+      "cost_usd": 695,
+      "variable_cost": "0.15% ad valorem based on cargo value",
+      "notes": "Fixed cost plus percentage of cargo value"
+    },
+    {
+      "component": "Airport Charges in Brazil",
+      "cost_usd": 0,
+      "variable_cost": "0.30 USD/kg, minimum 250.00 USD",
+      "notes": "Per kg rate with minimum charge"
+    },
+    {
+      "component": "Air Freight SSA-IAH",
+      "cost_usd": 735,
+      "variable_cost": "Based on chargeable weight of 210 kg",
+      "notes": "Fixed for given dimensions and weight"
+    },
+    {
+      "component": "Airline Terminal Fee",
+      "cost_usd": 200,
+      "notes": "For TAP airline"
+    },
+    {
+      "component": "Import Handling Fee",
+      "cost_usd": 125,
+      "notes": "Per shipment"
+    },
+    {
+      "component": "Delivery to Door",
+      "cost_usd": 355,
+      "notes": "With airport collection, dock to dock delivery"
+    },
+    {
+      "component": "US Customs Clearance",
+      "cost_usd": 150,
+      "notes": "Fixed fee"
+    },
+    {
+      "component": "Invoice Line Items",
+      "cost_usd": 0,
+      "variable_cost": "First 3 line-items free, 5.00 USD per line thereafter",
+      "notes": "Variable based on number of line items"
+    },
+    {
+      "component": "FDA Processing",
+      "cost_usd": 100,
+      "notes": "Fixed fee if applicable"
+    },
+    {
+      "component": "Bond",
+      "cost_usd": 0,
+      "variable_cost": "6.00 USD per 1,000 of value plus duty, minimum 100.00 USD",
+      "notes": "If applicable, for standard cargo"
+    },
+    {
+      "component": "Duties (MPF)",
+      "cost_usd": 0,
+      "variable_cost": "0.3464% of value, minimum 33.58 USD, maximum 651.50 USD",
+      "notes": "At cost"
+    },
+    {
+      "component": "Customs Exam Charges",
+      "cost_usd": 0,
+      "variable_cost": "At cost plus 125.00 USD handling charge per exam",
+      "notes": "If applicable, at discretion of US Customs"
+    }
+  ],
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "dimension_unit": "cm"
+  },
+  "notes": [
+    "Rates remain the same as the last quotation provided by 5CL Logistics.",
+    "Shipment details: 1 pallet, dimensions 122 x 100 x 100 cm, weight 180 kg, chargeable weight 210 kg.",
+    "All shipments entering the US are subject to customs inspection and exams at the discretion of US Customs.",
+    "A Surety Bond is required for all customs entries; rates may vary if clearance through other governmental agencies (FDA, EPA, USDA, etc.) is needed."
+  ]
+}
