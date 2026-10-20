@@ -1,0 +1,107 @@
+{
+  "snapshot_id": "ilheus-ba-to-austin-tx-2026-03-24",
+  "effective_timestamp_local": "2026-03-24T12:35:00",
+  "timezone": "UTC",
+  "timestamp_source_text": "Email date: Tue, Mar 24, 2026 at 12:35 PM",
+  "source_vendor": "5CL",
+  "source_quote_file": "freight_quotes/ilheus-ba-to-austin-tx-2026-03-24.pdf",
+  "source_quote_original_filename": "quotation-ilheus-to-austin-2026-03-24.pdf",
+  "operator_shipment_context": "Cacao shipment for retail partner",
+  "geographic_scope": "Ilheus, BA, Brazil to Austin, TX, USA",
+  "air_freight_rates_usd_per_kg": [
+    {
+      "min_weight_kg": 200,
+      "rate_usd_per_kg": 3.5
+    },
+    {
+      "min_weight_kg": 300,
+      "rate_usd_per_kg": 3.4
+    },
+    {
+      "min_weight_kg": 500,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 750,
+      "rate_usd_per_kg": 3.3
+    },
+    {
+      "min_weight_kg": 1000,
+      "rate_usd_per_kg": 3.2
+    }
+  ],
+  "weight_tiers_kg": [
+    200,
+    300,
+    500,
+    750,
+    1000
+  ],
+  "cost_components": [
+    {
+      "name": "Inland in Brazil",
+      "value_usd": 695,
+      "note": "Plus 0.15% ad valorem based on cargo value"
+    },
+    {
+      "name": "Airport Charges in Brazil",
+      "value_usd_per_kg": 0.3,
+      "minimum_usd": 250
+    },
+    {
+      "name": "Air Freight SSA-IAH",
+      "value_usd": 735,
+      "note": "Based on chargeable weight of 210 kg"
+    },
+    {
+      "name": "Airline Terminal Fee",
+      "value_usd": 200,
+      "note": "For TAP"
+    },
+    {
+      "name": "Import Handling Fee",
+      "value_usd": 125,
+      "note": "Per shipment"
+    },
+    {
+      "name": "Delivery to Door",
+      "value_usd": 355,
+      "note": "With airport collection, dock to dock"
+    },
+    {
+      "name": "US Customs Clearance",
+      "value_usd": 150
+    },
+    {
+      "name": "Invoice Line Items",
+      "note": "First 3 free, $5.00 per line thereafter"
+    },
+    {
+      "name": "FDA Processing",
+      "value_usd": 100
+    },
+    {
+      "name": "Bond",
+      "note": "$6.00 per $1,000 of value plus duty, $100.00 minimum"
+    },
+    {
+      "name": "MPF",
+      "note": "0.3464%, $33.58 min, $651.50 max"
+    },
+    {
+      "name": "Export Documentation",
+      "value_usd": 95,
+      "note": "Per shipment"
+    }
+  ],
+  "module_defaults": {
+    "currency": "USD",
+    "weight_unit": "kg",
+    "dimensional_unit": "cm"
+  },
+  "notes": [
+    "All shipments subject to US Customs inspection and exams at their discretion.",
+    "Exam charges billed at cost with additional $125.00 handling charge per exam.",
+    "Surety Bond required for customs entries; rates vary for cargo requiring clearance through other agencies."
+  ]
+}
