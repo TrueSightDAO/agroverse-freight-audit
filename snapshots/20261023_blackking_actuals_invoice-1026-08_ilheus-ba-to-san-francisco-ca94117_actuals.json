@@ -1,0 +1,357 @@
+{
+ "snapshot_id": "blackking-actuals-20261023-invoice-1026-08-ilheus-ba-to-san-francisco-ca94117",
+ "basis": "invoiced_actuals",
+ "effective_timestamp_local": "2026-10-23T00:00:00",
+ "timezone": "America/Los_Angeles",
+ "supersedes": "snapshots/20261015_blackking_actuals_invoice-1026-08_ilheus-ba-to-san-francisco-ca94117_actuals.json",
+ "supersede_reason": "Invoice 1026-08 total moved USD 4,866.33 -> USD 4,987.39. The omitted US single-entry bond of USD 121.06 was re-invoiced by 5 Continent on 2026-10-09 and paid by Wise on 2026-10-21 (txn #2448368244, gross USD 124.19). v1 captured a single payment and therefore under-states landed cost.",
+ "source_vendor": "5CL / Omega (Mega Services) - actual invoice",
+ "source_invoice_reference": "Invoice 1026-08 (Black King cargo, AWB 047-3175-3223)",
+ "source_quote_file": "brazil/sources/2026-10-07_5continent_invoice_1026-08.pdf",
+ "operator_shipment_context": {
+  "origin_contact": "Matheus",
+  "origin_location_text": "Ilheus area, Bahia (BA), Brazil",
+  "destination_contact": "Kirsten",
+  "destination_location_text": "San Francisco, CA, USA",
+  "awb": "047-3175-3223"
+ },
+ "actuals_reference": true,
+ "packing_model_enabled": false,
+ "packing_model_disabled_reason": "This basis carries FLAT invoiced line items from invoice 1026-08; the dynamic pallet/packaging model is applied on the forward-quote basis, not here.",
+ "air_freight_rates_usd_per_kg": {
+  "0": 0
+ },
+ "air_freight_rate_notes": "Air freight is a FLAT invoiced line (USD 1,241.00 billed at 365 kg x USD 3.40). The AWB records 349 kg and the carrier HAWB rate is USD 2.30/kg; the 365 kg x 3.40 basis was accepted and paid as-is and is NOT restated here. Separately, 5 Continent's own written quote was a flat USD 1,118.60 - the USD 122.40 excess is an open commercial claim (see open_claims) and is deliberately NOT netted into this basis. Do NOT re-scale by weight for this actuals basis.",
+ "cost_components": {
+  "fixed_line_items": [
+   {"label": "Inland Freight in Brazil", "amount_usd": 1012.17, "note": "invoice 1026-08"},
+   {"label": "Airline Terminal Fee - Brazil (SSA)", "amount_usd": 345.0, "note": "invoice 1026-08"},
+   {"label": "Palletizing", "amount_usd": 65.0, "note": "billed for 2 pallets (= USD 32.50/pallet)"},
+   {"label": "Storage SSA + Saturday airport fee", "amount_usd": 112.19, "note": "invoice 1026-08"},
+   {"label": "Clearance - Export Customs BRA + SDA", "amount_usd": 414.59, "note": "invoice 1026-08; open claim - quote said agreed directly with Omega"},
+   {"label": "Air Freight (365 kg x USD 3.40)", "amount_usd": 1241.0, "note": "flat invoiced line; quoted flat was 1,118.60"},
+   {"label": "Airline Terminal Fee - USA", "amount_usd": 200.0, "note": "invoice 1026-08"},
+   {"label": "Air Freight Handling (US)", "amount_usd": 125.0, "note": "invoice 1026-08"},
+   {"label": "Inland Freight (US, SFO -> door)", "amount_usd": 885.0, "note": "invoice 1026-08; matches quote"},
+   {"label": "Customs Clearance USA", "amount_usd": 150.0, "note": "invoice 1026-08"},
+   {"label": "Additional Invoice Lines (8 x USD 5)", "amount_usd": 40.0, "note": "invoice 1026-08"},
+   {"label": "FDA Filing", "amount_usd": 100.0, "note": "invoice 1026-08"},
+   {"label": "Customs Duties", "amount_usd": 128.53, "note": "invoice 1026-08; DUTY ONLY - proven by duty-advance fee 12.85 = 10% x 128.53"},
+   {"label": "Duty Advance Fee (0.1 x duty)", "amount_usd": 12.85, "note": "invoice 1026-08"},
+   {"label": "Bank Fees", "amount_usd": 35.0, "note": "invoice 1026-08"}
+  ],
+  "fixed_line_items_subtotal_usd": 4866.33,
+  "surcharges": [
+   {
+    "label": "Customs Bond (single-entry)",
+    "amount_usd": 121.06,
+    "invoice": "1026-08 (re-invoiced 2026-10-09)",
+    "note": "Omitted from the original 2026-10-07 invoice and added back by 5 Continent. Verified against our own quoted formula: max(USD 100, USD 6.00 per 1,000 of value+duty). 121.06 / 0.006 = 20,176.67; less duty 128.53 => implied declared value USD 20,048.14. Reverse-checks to 121.06 exactly.",
+    "verified_against_quote_formula": true,
+    "implied_declared_value_usd": 20048.14
+   }
+  ],
+  "surcharges_subtotal_usd": 121.06
+ },
+ "invoice_totals": {
+  "invoice_total_usd_original": 4866.33,
+  "bond_reinvoiced_usd": 121.06,
+  "invoice_total_usd_corrected": 4987.39,
+  "wire_fee_usd": 30.0,
+  "wise_fee_usd": 3.13,
+  "payment_fees_total_usd": 33.13,
+  "booked_total_usd": 5020.52
+ },
+ "payment_evidence": [
+  {
+   "rail": "Wells Fargo wire",
+   "date_utc": "2026-10-12",
+   "amount_usd": 4866.33,
+   "reference": "OW00007548893768",
+   "fee_usd": 30.0,
+   "note": "Principal payment against original invoice 1026-08."
+  },
+  {
+   "rail": "Wise (USD)",
+   "date_utc": "2026-10-21",
+   "amount_usd": 121.06,
+   "gross_usd": 124.19,
+   "reference": "txn #2448368244",
+   "memo": "Balance payment for freight",
+   "fee_usd": 3.13,
+   "note": "Covers the re-invoiced US single-entry bond. 4,866.33 + 121.06 = 4,987.39 = corrected invoice total."
+  }
+ ],
+ "packing_actuals": {
+  "net_weight_kg": 302.06,
+  "pallets_actual": 2,
+  "pallet_unit_usd": 18.758,
+  "pallet_tare_kg": 10,
+  "box_mix_note": "22 x Reinforced Cardboard 10kg boxes (USD 2.036 ea) + 2 x Foam 120-kraft (USD 24.1097 ea) + 2 x Foam 46-bar (USD 5.1855 ea)"
+ },
+ "landed_cost": {
+  "basis_statement": "Freight is weight/volume driven, so the uplift is apportioned by shipped weight, matching how the v1 pool was built. Apportioning by VALUE instead would inflate high-cost items and is explicitly rejected.",
+  "shipped_weight_kg": 302.06,
+  "weight_reconciliation": {
+   "sum_of_ledger_weights_kg": 302.057,
+   "packing_actuals_net_kg": 302.06,
+   "delta_kg": 0.003,
+   "note": "Accepted v1 rounding (per-ledger weights sum to 302.057 kg vs 302.06 kg in packing_actuals). Allocation uses ledger weights; per-kg uses 302.06."
+  },
+  "booked_total_usd": 5020.52,
+  "landed_usd_per_kg_before": 16.21,
+  "landed_usd_per_kg_after": 16.62094,
+  "uplift_usd_per_kg": 0.411143,
+  "true_up_pool_usd": 124.19,
+  "true_up_composition": {
+   "bond_usd": 121.06,
+   "wise_fee_usd": 3.13,
+   "sum_usd": 124.19
+  },
+  "allocation": {
+   "Main": {
+    "basis_weight_kg": 137.757,
+    "delta_usd": 56.64,
+    "booked_before_usd": 2233.03,
+    "booked_after_usd": 2289.67,
+    "share_pct": 45.6063
+   },
+   "AGL8": {
+    "basis_weight_kg": 43.8,
+    "delta_usd": 18.01,
+    "booked_before_usd": 710.0,
+    "booked_after_usd": 728.01,
+    "share_pct": 14.5006
+   },
+   "AGL13": {
+    "basis_weight_kg": 120.5,
+    "delta_usd": 49.54,
+    "booked_before_usd": 1953.3,
+    "booked_after_usd": 2002.84,
+    "share_pct": 39.8931
+   }
+  }
+ },
+ "financing_waterfall": {
+  "policy": "Self-fund first from each ledger's own USD cash; AGL15 (the syndicate) finances only the remaining shortfall. Shares are unchanged from v1, so the increment follows the same borrower split.",
+  "per_ledger": {
+   "Main": {
+    "own_usd_available": 4590.91,
+    "own_usd_applied": 2289.67,
+    "agl15_financed_usd_after": 0.0,
+    "agl15_financed_usd_before": 0.0,
+    "agl15_financed_increment_usd": 0.0
+   },
+   "AGL8": {
+    "own_usd_available": 564.946,
+    "own_usd_applied": 564.946,
+    "agl15_financed_usd_after": 163.064,
+    "agl15_financed_usd_before": 145.054,
+    "agl15_financed_increment_usd": 18.01
+   },
+   "AGL13": {
+    "own_usd_available": 0.0,
+    "own_usd_applied": 0.0,
+    "agl15_financed_usd_after": 2002.84,
+    "agl15_financed_usd_before": 1953.3,
+    "agl15_financed_increment_usd": 49.54
+   }
+  },
+  "agl15_outlay_before_usd": 2098.354,
+  "agl15_outlay_after_usd": 2165.904,
+  "agl15_outlay_increment_usd": 67.55
+ },
+ "increment_attribution": {
+  "note": "AGL8 and AGL13 have insufficient own USD, so their increments become additional debt. Main funds its increment from its own USD cash and borrows nothing extra.",
+  "agl8_extra_borrowed_usd": 18.01,
+  "agl13_extra_borrowed_usd": 49.54,
+  "main_paid_from_own_cash_usd": 56.64,
+  "agl15_syndicate_increment_usd": 67.55,
+  "sum_equals_true_up": true,
+  "rounding_note": "Un-rounded weight-proportional values are 18.0083 and 49.5433. Posting increments in whole cents (18.01 / 49.54) makes the borrower increments sum to exactly 67.55, matching the AGL15 outlay increment; the un-rounded pair would sum to 67.552 and leave a 0.002 drift against the outlay row."
+ },
+ "unit_cost_examples": {
+  "note": "Per-unit uplift = unit_weight_kg x USD 0.411143/kg.",
+  "ceremonial_200g_pouch_agl8": {
+   "unit_weight_kg": 0.2,
+   "uplift_usd": 0.08223,
+   "unit_cost_before_usd": 13.78,
+   "unit_cost_after_usd": 13.86223
+  },
+  "nibs_8oz_pouch_main": {
+   "unit_weight_kg": 0.2268,
+   "uplift_usd": 0.09325,
+   "unit_cost_before_usd": 10.51,
+   "unit_cost_after_usd": 10.60325
+  }
+ },
+ "agl15_state_terminology": {
+  "note": "Two DIFFERENT quantities live on the AGL15 Balance tab and must never be conflated. A review of v1 flagged exactly this conflation; this block exists to pin the definitions.",
+  "outlay_cumulative_usd": {
+   "definition": "Cumulative principal AGL15 has deployed = SUM of all NEGATIVE USD rows on AGL15 Transactions = absolute value of the 'USD' line in the Balance ASSET block (col E/F).",
+   "value_observed_2026_10_23": 2098.354,
+   "note": "Unchanged by this snapshot. AGL15 Transactions t56 (20261014) already carries -2,098.354 for the 5 Continent freight shortfall."
+  },
+  "usd_balance_usd": {
+   "definition": "AGL15's own remaining USD cash = SUM of ALL signed USD rows on AGL15 Transactions = absolute value of the 'Gary Teh' line in the Balance RESOURCE LOCATION block (col H/I).",
+   "value_observed_2026_10_23": 2518.046
+  },
+  "capital_contributed_usd": {
+   "definition": "Total USD capital put into AGL15 = sum of POSITIVE USD rows on Transactions.",
+   "value_observed_2026_10_23": 4616.4
+  },
+  "invariant": "usd_balance = capital_contributed - outlay_cumulative  =>  2518.046 = 4616.40 - 2098.354",
+  "after_true_up_formula": {
+   "outlay_cumulative_usd": "outlay_observed + 67.55",
+   "usd_balance_usd": "usd_balance_observed - 67.55",
+   "why": "AGL8 and AGL13 have no usable own USD (AGL8 Balance shows USD = 0; AGL13 has no USD asset line at all), so both increments fall to AGL15. 18.01 + 49.54 = 67.55.",
+   "deliberately_not_hardcoded": "Absolute post-state values are NOT published here. Two pinned pre-booking baselines were found STALE on live read (AGL15 USD was pinned at 2,142.396 vs live 2,518.046). Post-state must be computed from the live figure at posting time."
+  },
+  "live_read_2026_10_23": {
+   "balance_tab_is_derived": "A6 / E6 / H6 / L6 are query() spills over Transactions. They are DERIVED - never write to them. Confirmed via FORMULA render.",
+   "agl15": {
+    "equity_financier": "Annie Teo 10,000 SGD (no USD equity line)",
+    "asset_block": {
+     "AGL13 equity holdings": 2165.07,
+     "AGL8 equity holdings": 145.054,
+     "USD": 2518.046
+    },
+    "transactions_rows": 60,
+    "usd_rows": 50,
+    "next_append_row": 61
+   },
+   "agl8": {
+    "equity": {
+     "AGL15": 145.054,
+     "Gary Teh": 6549.25,
+     "TrueSight DAO": 382.2068598
+    },
+    "asset_usd": 0,
+    "freight_asset_rows": {
+     "Kirsten Ritschel": {
+      "almonds_kg": 10,
+      "ceremonial_pouches": 169
+     }
+    },
+    "transactions_rows": 202,
+    "next_append_row": 203
+   },
+   "agl13": {
+    "equity": {
+     "AGL15": 2165.07,
+     "Gary Teh": 1180.45
+    },
+    "asset_rows": {
+     "Cacao Nibs (Kilograms) Santos 20260213 - AGL13 + 047-3175-3223 - San Francisco": 99.5,
+     "Cacao Tea (Kilograms) Santos 20260213 - AGL13 + 047-3175-3223 - San Francisco": 21
+    },
+    "transactions_rows": 38,
+    "next_append_row": 39
+   },
+   "stale_pins_corrected": [
+    "AGL15 USD balance: pinned 2,142.396 -> live 2,518.046",
+    "AGL15 next append row: pinned 67 -> live 61",
+    "AGL8 next append row: pinned 187 -> live 203",
+    "AGL13 next append row: pinned 27 -> live 39"
+   ]
+  }
+ },
+ "open_claims": {
+  "note": "Separate from the amortised cost basis BY DESIGN. Book nothing here until cash is actually recovered; no contingent credit in unit cost.",
+  "tiers": [
+   {
+    "tier": "contractual_demand",
+    "items": [
+     {
+      "label": "Air freight re-bill to quoted flat rate",
+      "amount_usd": 122.4,
+      "basis": "Invoiced 1,241.00 (365 kg x 3.40) vs 5CL quoted flat 1,118.60."
+     },
+     {
+      "label": "Inland Brazil above 5CL's own quote",
+      "amount_usd": 175.17,
+      "basis": "Quoted 837.00, invoiced 1,012.17."
+     }
+    ],
+    "subtotal_usd": 297.57,
+    "posture": "Strong - billed above the forwarder's own written quote."
+   },
+   {
+    "tier": "conditional_duplicate",
+    "items": [
+     {
+      "label": "Clearance - Export Customs BRA + SDA",
+      "amount_usd": 414.59,
+      "basis": "Quote says clearance was agreed directly with Omega. If Omega was separately paid this is a straight duplicate; otherwise genuine re-scope."
+     }
+    ],
+    "subtotal_usd": 414.59,
+    "posture": "Ask for Omega's receipt before asserting."
+   }
+  ],
+  "actionable_exposure_usd": 937.2,
+  "do_not_lead_with": "The carrier HAWB (349 kg x USD 2.30 = 802.70) implies a 438.30 spread, but that is 5CL's own buy-side margin (MAWB settles at a nominal minimum). Leading with it turns a contract point into a margin debate. Use the quoted rate (122.40), not the HAWB.",
+  "excluded_as_conceded": {
+   "items": [
+    "Palletizing 65.00",
+    "Storage SSA + Saturday 112.19",
+    "Bank fees 35.00",
+    "Duty advance 12.85"
+   ],
+   "subtotal_usd": 225.04,
+   "posture": "Real, incurred, accepted - do not dispute."
+  },
+  "late_fee": {
+   "rate": "5%",
+   "approx_usd": 249.37,
+   "status": "Never charged by vendor; NOT waived in writing. Get explicit written waiver."
+  },
+  "mpf_gap": {
+   "rate": "0.3464%",
+   "approx_usd": 69.89,
+   "status": "Quoted but ABSENT from invoice 1026-08, and duties proven to be duty-only, so MPF was likely omitted the same way the bond was. Expect a possible third invoice; request a final-and-settled confirmation."
+  }
+ },
+ "rejected_treatments": [
+  {
+   "treatment": "Treat the 121.06 as uncollected bank fees",
+   "why_rejected": "Bank fees cannot raise an invoice TOTAL. The total itself moved 4,866.33 -> 4,987.39, which only a re-invoiced charge explains."
+  },
+  {
+   "treatment": "Treat the 121.06 as a double charge inside Customs Duties 128.53",
+   "why_rejected": "128.53 is duty only - proven because the duty-advance fee 12.85 is exactly 10% of it. Bond and MPF sit outside that line."
+  },
+  {
+   "treatment": "Credit the bond against the 937.20 dispute claim",
+   "why_rejected": "Different transactions and different directions. The bond is a charge we owe and paid; the claim is money owed back."
+  },
+  {
+   "treatment": "Apportion the uplift by item VALUE (+2.536%)",
+   "why_rejected": "Freight is weight/volume driven. Value apportionment would put roughly 4x the correct uplift on the ceremonial pouch (+0.35 vs +0.08)."
+  },
+  {
+   "treatment": "Amortise the 937.20 open claim into unit cost",
+   "why_rejected": "Contingent. No credit until cash lands; booking it would understate inventory."
+  },
+  {
+   "treatment": "Write into the AGL Balance tabs directly",
+   "why_rejected": "Balance cols A/B (Equity), E/F (Asset) and H/I (Resource Location) are query() spills over Transactions. Append signed rows to Transactions; the spills recompute."
+  }
+ ],
+ "status": "proposed_not_committed",
+ "ledger_postings_applied": false,
+ "ledger_postings_required_when_approved": [
+  "AGL8 real freight shortfall 145.054 -> 163.064 (+18.01) and expense 710.00 -> 728.01 (+18.01)",
+  "AGL13 real freight shortfall 1,953.30 -> 2,002.84 (+49.54) and expense 1,953.30 -> 2,002.84 (+49.54)",
+  "AGL15 freight disbursement 2,098.354 -> 2,165.904 (+67.55)",
+  "Main real freight expense 2,233.03 -> 2,289.67 (+56.64)",
+  "Rebuild the 3 offchain assets in transit rows so col M (destination asset name) carries the corrected unit costs"
+ ],
+ "notes": [
+  "SUPERSEDES the 2026-10-15 actuals snapshot (single-payment basis).",
+  "Landed freight = USD 5,020.52 / 302.06 kg net = USD 16.62/kg (was USD 16.21/kg on USD 4,896.33).",
+  "The USD 124.19 true-up = bond 121.06 + Wise fee 3.13. The 3.13 is capitalised on the same precedent that capitalised the 30.00 wire fee in v1.",
+  "AGL13 t27-t31 capital-injection legs and AGL15 t56 (20261014, -2,098.354) are already LIVE; this snapshot does not restate them, it increments them.",
+  "Cross-check found on live read: the AGL15 Balance ASSET spill E6 shows 2,518.046 = 2,165.07 + 145.054 + 1,953.30 - 1,745.378 (net non-freight), confirming the freight row reproduces itself inside the spilled asset total."
+ ]
+}
